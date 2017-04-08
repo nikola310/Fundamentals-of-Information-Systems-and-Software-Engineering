@@ -1,0 +1,22 @@
+package controller.editor.listeners;
+
+import gui.editor.Editor;
+import gui.preview.PanelPreview;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import model.tree.WorkSpaceTreeModel;
+
+public class PreviewListenerToolBar implements ActionListener {
+
+	public void actionPerformed(ActionEvent e) {
+		PanelPreview preview = new PanelPreview();
+		@SuppressWarnings("unused")
+		WorkSpaceTreeModel root = (WorkSpaceTreeModel) Editor.getInstance()
+				.getTree().getModel().getRoot();
+		Editor.getInstance().setPreview(preview);
+		preview.setVisible(true);
+	}
+
+}

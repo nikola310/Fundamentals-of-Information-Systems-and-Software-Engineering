@@ -1,0 +1,32 @@
+package gui.editor.dialogs;
+
+import gui.editor.Editor;
+
+import javax.swing.ImageIcon;
+import javax.swing.JDialog;
+import javax.swing.JFrame;
+import javax.swing.WindowConstants;
+
+import net.miginfocom.swing.MigLayout;
+
+@SuppressWarnings("serial")
+public class HelpDialog extends JDialog{
+	
+	public HelpDialog(JFrame parent){
+		setModal(true);
+		setSize(800, 400);
+		setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+		setTitle(Editor.getInstance().getResourceBundle().getString("btnPomoc"));
+		setLayout(new MigLayout());
+		setResizable(false);
+		setLocationRelativeTo(parent);
+		ImageIcon icon = new ImageIcon("Images/IconLarge.png");
+		setIconImage(icon.getImage());
+		
+		
+		
+		
+		
+	}
+
+}
