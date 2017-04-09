@@ -19,6 +19,7 @@ public class PanelModel extends Observable implements TreeNode, Serializable {
 	/*
 	 * Model panela koji sadrzi listu parametara, naziv, naslov, inicijalnu
 	 * velicinu panela inicijalno se ne moze menjati velicina
+	 * Test za GitHub
 	 */
 	private static final long serialVersionUID = 1L;
 	public static String SELECTION = "Selection";
